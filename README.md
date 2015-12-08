@@ -18,7 +18,7 @@ Dockerized `Oracle Linux` with `Oracle Single Sign On` (`OSSO`).
 4. Run a container: `$ docker run --interactive --tty --publish 9778:7777 --name osso oraclelinux-osso`
 5. In the running container:
   - Start `OHS`: `$ cd /oracle/Middleware/Oracle_WT1/opmn/bin && ./opmnctl startall`
-  - Use the escape sequence `CTRL-P` + `CTRL-Q` in order to detach the tty without exiting the shell. The container will continue to exist in a stopped state once exited (see [Docker Running an Interactive Shell](http://docs.docker.com/engine/userguide/basics/#running-an-interactive-shell)).
+  - Use the `CTRL-P` + `CTRL-Q` escape sequence in order to detach the tty without exiting the shell. The container will continue to exist in a stopped state once exited (see [Docker Running an Interactive Shell](http://docs.docker.com/engine/userguide/basics/#running-an-interactive-shell)).
 6. Verify that everything is working fine:
   - Get the IP address:
     - In Mac OS: `$ docker-machine ip default`
